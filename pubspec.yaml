@@ -1,0 +1,51 @@
+name: quran_app
+description: "خطب العلامة الشيخ محمد بن عبدالله الإمام"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.13.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  audioplayers: ^6.8.1
+  just_audio: ^0.10.6
+  shared_preferences: ^2.3.2
+  share_plus: ^10.0.2
+  url_launcher: ^6.3.1
+  audio_service: ^0.18.15
+  audio_session: ^0.1.21
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio_compressed/
+    - assets/images/
+    - assets/icon.png
+  fonts:
+    - family: Tajawal
+      fonts:
+        - asset: assets/fonts/Tajawal-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Tajawal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Tajawal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Tajawal-ExtraBold.ttf
+          weight: 800
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#0F1414"
+  adaptive_icon_foreground: "assets/icon.png"
